@@ -1,0 +1,29 @@
+:root {
+  --containerPadding: 1.5rem;
+}
+
+body {
+  background-color: rgb(128, 98, 214);
+  padding: var(--containerPadding) 0;
+}
+
+.block {
+  display: flex;
+  overflow-x: scroll;
+  gap: 1rem;
+  height: calc(100vh - (2 * var(--containerPadding)));
+}
+
+.panel {
+  background-color: rgb(255, 210, 215);
+  height: 30%;
+  flex: 1;
+  border-radius: 2rem;
+  position: relative;
+  transition: 0.5s ease, background-color 1s ease-in 100ms;
+
+  &:hover {
+    background-color: rgb(20, 210, 215);
+    flex: 3;
+  }
+}

@@ -1,0 +1,31 @@
+#primer2 {
+  .primer2 {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    animation: floatingAnimation 3s ease-in-out infinite;
+    h1 {
+      font-family: 'Allura', cursive; 
+      color: rgb(10, 60, 10);
+      letter-spacing: 2px; 
+    }
+    p {
+      font-family: 'Allura', cursive; /* Добавьте выбранный шрифт */
+      color: rgb(212, 87, 108);
+      text-align: center;
+    }
+  }
+}
+
+/* Определение анимации */
+@keyframes floatingAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
