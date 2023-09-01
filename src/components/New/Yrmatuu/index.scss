@@ -1,4 +1,18 @@
 #primer2 {
+  position: relative;
+
+  .img-top {
+    position: absolute;
+    right: 0;
+    width: 70%;
+    transform: rotate(180deg);
+  }
+
+  .img-bottom {
+    position: absolute;
+    width: 70%;
+  }
+
   .primer2 {
     padding-top: 200px;
     display: flex;
@@ -7,24 +21,28 @@
     justify-content: center;
     gap: 20px;
     animation: floatingAnimation 3s ease-in-out infinite;
+
     h1 {
-      font-family: 'Allura', cursive; 
+      font-family: 'Allura', cursive;
       color: rgb(10, 60, 10);
-      letter-spacing: 2px; 
+      letter-spacing: 2px;
     }
+
     p {
-      font-family: 'Allura', cursive; /* Добавьте выбранный шрифт */
+      font-family: 'Allura', cursive;
       color: rgb(212, 87, 108);
       text-align: center;
     }
   }
 }
 
-/* Определение анимации */
 @keyframes floatingAnimation {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-20px);
   }

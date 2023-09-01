@@ -1,0 +1,28 @@
+.audio-player {
+  button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 99;
+    cursor: pointer;
+    font-size: 40px;
+    color: red;
+    background: none;
+    border: none;
+    animation: moveButton 1s linear infinite;
+  }
+}
+
+@keyframes moveButton {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
